@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div>
+            <h1>Week 4 - Project Overview</h1>
+            <button onclick="showInfo()">User Info</button>
+            <button onclick="refreshPage()">Refresh</button>
+            <button onclick="goToPage()">New Page</button>
+            <h2 id="h1"></h2>
+            <h2 id="h2"></h2>
+            <h2 id="h3"></h2>
+            <h2 id="h4"></h2>
+        </div>
+
+        <script>
+            function showInfo() {
+                const textH2 = document.getElementById('h1')
+                const textH3 = document.getElementById('h2')
+                const textH4 = document.getElementById('h3')
+                const textH5 = document.getElementById('h4')
+
+                textH2.innerText = "Agent - " + navigator.userAgent
+                textH3.innerText = "Language - " + navigator.language
+                textH4.innerText = "Width - " + screen.width
+                textH5.innerText = "Height - " + screen.height
+            }
+
+            function refreshPage() {
+                window.location.reload()
+            }
+
+            function goToPage() {
+                window.open('https://www.google.com')
+            }
+        </script>
+    </body>
+</html>

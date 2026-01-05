@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 - Feom Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="flex justify-center w-screen h-screen">
+        <div class="bg-black/60 backdrop-blur-md border border-red-900/50 w-full max-w-lg p-10 m-10 rounded-2xl shadow-2xl">
+            <h1 class="text-center font-bold text-2xl label-text text-gray-200">Game Purchase: Resident Evil</h1>
+            <p class="text-sm text-center label-text text-gray-200">แบบฟอร์มซื้อเกม: Resident Evil</p>
+            <form>
+                <div class="border-l-4 border-Primary-600 pl-4 mb-6 label-text text-gray-200">
+                    <p>Name</p>
+                    <input type="text" placeholder="กรุณาระบุชื่อ" class="input placeholder:text-black">
+                </div>
+                <div class="border-l-4 border-Primary-600 pl-4 mb-6 label-text text-gray-200">
+                    <p>Surname</p>
+                    <input type="text" placeholder="กรุณาระบุนามสกุล" class="input placeholder:text-black">
+                </div>
+                <div class="border-l-4 border-Primary-600 pl-4 mb-6 label-text text-gray-200">
+                    <p>Email</p>
+                    <input type="text" placeholder="กรุณาระบุ Email" class="input placeholder:text-black  ">
+                </div>
+                <div class="border-l-4 border-Primary-600 pl-4 mb-6 label-text text-gray-200">
+                    <p>Game Name</p>
+                    <select class="select w-full mt-1 bg-gray-200 text-black ">
+                        <option disabled selected >กรุณาเลือกเกม</option>
+                        <option>Resident Evil 1 (1996)</option>
+                        <option>Resident Evil 1 Remake (2002)</option>
+                        <option>Resident Evil 2 (1998)</option>
+                        <option>RE2 Remake (2019)</option>
+                        <option>Resident Evil 3: Nemesis (1999)</option>
+                        <option>RE3 Remake (2020)</option>
+                        <option>Resident Evil 0(2002)</option>
+                        <option>Resident Evil Code: Veronica (2000)</option>
+                        <option>Resident Evil 4 (2005)</option>
+                        <option>RE4 Remake (2023)</option>
+                        <option>Resident Evil 5 (2009)</option>
+                        <option>Resident Evil 6 (2012)</option>
+                        <option>Resident Evil 7: Biohazard (2017)</option>
+                        <option>Resident Evil: Village (RE8) (2021)</option>
+                        <option>Resident Evil Requiem (RE9) (ประกาศแล้ว 2026) </option>
+                    </select>
+                </div>
+                <div class="border-l-4 border-Primary-600 pl-4 mb-6 label-text text-gray-200 ">
+                    <p>ระบุหมายเหตุ</p>
+                    <textarea class="textarea placeholder:text-black" placeholder="กรุณาระบุหมายเหตุ"></textarea>
+                </div>
+                <div class="flex justify-center mt-1 p-1">
+                    <button class="btn btn-active w-full btn-warning border-none shadow-lg">Submit</button>
+
+                </div>
+                <script src="script.js"></script>
+</body>
+
+</html>
+
